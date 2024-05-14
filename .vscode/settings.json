@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/ec20119b-46ed-4aec-9c38-afec9b976031/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/td-primera-app-mares",
+    "appService.deploySubpath": "."
+}
