@@ -6,8 +6,8 @@ from pymongo import MongoClient
 from bson import ObjectId
 
 # Conectar con MongoDB
-client = MongoClient("mongodb+srv://user:NhnQJGvYEkFQstMC@cluster0.kohp4jk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-# NhnQJGvYEkFQstMC
+client = MongoClient('mongodb+srv://{MONGO_USER}:{MONGO_PASS}@cluster0.{MONGO_CLUSTER}.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
+                     .format(**os.environ))
 db = client["bookstore"]
 collection = db["books"]
 
